@@ -78,24 +78,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$blue-light: #5bc6cc;
-$blue-dark: #072269;
-$yellow: #f8ed45;
-$blue: #5bc6cc;
-$orange: #f07f22;
-$green: #43ac88;
-$red: #ee373e;
-$green-light: #9ecf7c;
-$pink: #f06098;
-$dark: #4a4a4a;
-$brown: #382626;
-$light: #f6f3ea;
-$gradient: linear-gradient(
-  100deg,
-  rgba(255, 255, 255, 0%) 0%,
-  rgba(0, 0, 0, 0.15) 100%
-);
-
 .contact {
   height: 100%;
 }

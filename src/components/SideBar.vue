@@ -32,58 +32,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$blue-light: #5bc6cc;
-$blue-dark: #072269;
-$yellow: #f8ed45;
-$blue: #5bc6cc;
-$orange: #f07f22;
-$green: #43ac88;
-$red: #ee373e;
-$green-light: #9ecf7c;
-$pink: #f06098;
-$dark: #4a4a4a;
-$brown: #382626;
-$light: #f6f3ea;
-$gradient: linear-gradient(
-  100deg,
-  rgba(255, 255, 255, 0%) 0%,
-  rgba(0, 0, 0, 0.15) 100%
-);
 .side-bar {
-  height: 100vh;
-  width: 60vw;
-  background-color: $blue-light;
-  position: absolute;
+  top: 0;
   right: 0;
   bottom: 0;
-  top: 0;
   z-index: 5;
-  background-image: $gradient, url("../assets/arches.png");
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: "Recoleta-Bold";
-  overflow: hidden;
   opacity: 0;
+  width: 60vw;
+  height: 100vh;
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  flex-direction: column;
+  background-size: contain;
+  font-family: "Recoleta-Bold";
+  background-color: $blue-light;
+  justify-content: space-between;
+  background-image: $gradient, url("../assets/arches.png");
   transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   .link {
-    display: flex;
     flex: 1 0 0;
-    align-items: center;
-    padding-left: 2rem;
+    display: flex;
     font-size: 2rem;
+    padding-left: 2rem;
+    align-items: center;
     cursor: pointer;
-
     &:hover {
       box-shadow: inset 0 0 10px #000000;
     }
   }
   .close-icon {
-    position: absolute;
     top: 0;
     right: 0;
-    margin: 1rem 1rem;
     height: 1.75rem;
+    margin: 1rem 1rem;
+    position: absolute;
     &:active {
       transform: scale(0.8);
     }
