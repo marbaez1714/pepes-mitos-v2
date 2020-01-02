@@ -15,7 +15,7 @@
 
 <script>
 import VueScrollTo from "vue-scrollto";
-import FoodItem from "@/views/components/FoodItem";
+import FoodItem from "@/components/FoodItem";
 export default {
   name: "menu-view",
   components: {
@@ -83,7 +83,7 @@ $gradient: linear-gradient(
   background-color: red;
   display: flex;
   transition: all 250ms ease-in;
-  background-image: $gradient, url("../../assets/concrete-wall.png");
+  background-image: $gradient, url("../assets/concrete-wall.png");
   align-items: center;
   font-family: "Recoleta-Bold";
   justify-content: flex-start;
@@ -138,7 +138,7 @@ $gradient: linear-gradient(
   max-height: 0;
   transition: all 250ms ease-in;
   background-color: $light;
-  background-image: url("../../assets/brick-wall.png");
+  background-image: url("../assets/brick-wall.png");
   transform-origin: top center;
   opacity: 0;
   overflow: scroll;

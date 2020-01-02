@@ -107,7 +107,7 @@ $gradient: linear-gradient(
   padding: 1rem;
   align-items: center;
   background-color: $light;
-  background-image: url("../assets/brick-wall.png");
+  background-image: $gradient, url("../assets/brick-wall.png");
   a {
     margin-left: 0.5rem;
   }

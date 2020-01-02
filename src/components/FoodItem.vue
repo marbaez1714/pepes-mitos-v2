@@ -1,7 +1,7 @@
 <template>
   <div class="food-wrapper">
     <div class="guy-approved" v-if="item.ddd">
-      <img src="../../assets/guyhead.png" />
+      <img src="../assets/guyhead.png" />
     </div>
     <div>
       <div class="food-name">

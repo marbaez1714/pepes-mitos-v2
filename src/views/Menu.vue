@@ -68,7 +68,7 @@
 </template>
 
 <script>
-import MenuItem from "@/views/components/MenuItem";
+import MenuItem from "@/components/MenuItem";
 import MenuData from "@/assets/menu.json";
 export default {
   name: "menu-view",
