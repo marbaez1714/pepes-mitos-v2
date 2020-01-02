@@ -3,7 +3,7 @@
     <div class="section-content location">
       <div class="sub-section">
         <!-- HOURS -->
-        <div class="information">
+        <div class="information yellow">
           <span class="title">Hours</span>
           <span class="detail"
             >Mon. & Tue. <span class="pipe">||</span> 11am - 3pm</span
@@ -19,7 +19,7 @@
           >
         </div>
         <!-- ADDRESS -->
-        <div class="information">
+        <div class="information blue-light">
           <span class="title">Address</span>
           <span class="detail link">
             <a
@@ -32,14 +32,14 @@
           </span>
         </div>
         <!-- PHONE NUMBER -->
-        <div class="information">
+        <div class="information orange">
           <span class="title">Phone Number</span>
           <span class="detail link">
             <a href="tel:214-741-1901">214-741-1901</a>
           </span>
         </div>
         <!-- SOCIAL MEDIA -->
-        <div class="information">
+        <div class="information green">
           <span class="title">Social Media</span>
           <span class="detail link">
             <a href="https://www.facebook.com/pepesandmitos/"
@@ -103,8 +103,7 @@ $gradient: linear-gradient(
   font-size: 2rem;
   display: flex;
   flex-direction: row;
-  height: calc(100% - 2rem);
-  padding: 1rem;
+  height: 100%;
   align-items: center;
   background-color: $light;
   background-image: $gradient, url("../assets/brick-wall.png");
@@ -118,10 +117,27 @@ $gradient: linear-gradient(
     flex-direction: column;
     width: 50%;
     height: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     .information {
       display: flex;
       flex-direction: column;
+      flex: 1 0 0;
+      justify-content: center;
+      padding: 1rem;
+      background-image: $gradient, url("../assets/concrete-wall.png");
+
+      &.yellow {
+        background-color: $yellow;
+      }
+      &.blue-light {
+        background-color: $blue-light;
+      }
+      &.orange {
+        background-color: $orange;
+      }
+      &.green {
+        background-color: $green;
+      }
     }
     .pipe {
       color: $orange;
@@ -129,14 +145,15 @@ $gradient: linear-gradient(
     .title {
       font-family: "Recoleta-Bold";
     }
-    .link {
-      margin-bottom: 1rem;
-    }
     .detail {
       padding-left: 2rem;
     }
     &.map {
-      border: 0.25rem solid $blue-dark;
+      background: $blue-dark;
+      height: calc(100% - 2rem);
+      background-image: $gradient, url("../assets/concrete-wall.png");
+
+      padding: 1rem;
       .vue-google-map {
         height: 100%;
       }
@@ -145,7 +162,7 @@ $gradient: linear-gradient(
 
   @media screen and (max-width: 850px) {
     flex-direction: column;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     height: auto;
     .sub-section {
       text-align: center;
@@ -155,6 +172,9 @@ $gradient: linear-gradient(
       .detail {
         padding-left: 0;
       }
+      &.map {
+        height: calc(90vh - 4rem);
+      }
     }
     span {
       padding: 0.5rem 0 0;
@@ -163,7 +183,10 @@ $gradient: linear-gradient(
       display: none;
     }
     .map {
-      height: 60vh;
+      width: calc(100% - 2rem);
+      .vue-google-map {
+        height: 60vh;
+      }
     }
   }
 }
