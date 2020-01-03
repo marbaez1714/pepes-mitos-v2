@@ -6,6 +6,10 @@ import VueScrollTo from "vue-scrollto";
 import "vue-googlemaps/dist/vue-googlemaps.css";
 import VueGoogleMaps from "vue-googlemaps";
 
+import VueYouTubeEmbed from 'vue-youtube-embed'
+
+
+Vue.use(VueYouTubeEmbed)
 Vue.use(VueGoogleMaps, {
   load: {
     // Google API key
@@ -17,10 +21,7 @@ Vue.use(VueGoogleMaps, {
   }
 });
 
-Vue.config.productionTip = false;
-
 Vue.use(VueScrollTo);
-
 Vue.use(VueScrollTo, {
   container: "body",
   duration: 500,
@@ -34,6 +35,8 @@ Vue.use(VueScrollTo, {
   x: false,
   y: true
 });
+
+Vue.config.productionTip = false;
 
 new Vue({
   router,

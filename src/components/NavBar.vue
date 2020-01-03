@@ -51,18 +51,19 @@ export default {
   display: flex;
   color: white;
   align-items: center;
-  background-image: url("../assets/lined-paper-2.png");
   justify-content: space-between;
+  background-image: url("../assets/lined-paper-2.png");
+  box-shadow: 0 0 10px #000000;
 
   .title {
-    margin-left: 1rem;
     display: flex;
-    flex-direction: column;
     cursor: pointer;
+    margin-left: 1rem;
+    flex-direction: column;
     .main {
-      font-family: "Recoleta-Bold";
       line-height: 1;
       font-size: 2rem;
+      font-family: "Recoleta-Bold";
     }
     .sub {
       line-height: 1;
@@ -72,9 +73,9 @@ export default {
   .links {
     margin-right: 0.5rem;
     a {
+      color: white;
       margin: 0 0.5rem;
       font-weight: bold;
-      color: white;
 
       &.router-link-exact-active {
         color: #f8ed45;

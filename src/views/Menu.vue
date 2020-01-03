@@ -70,6 +70,8 @@
 <script>
 import MenuItem from "@/components/MenuItem";
 import MenuData from "@/assets/menu.json";
+import VueScrollTo from "vue-scrollto";
+
 export default {
   name: "menu-view",
   components: {
@@ -95,9 +97,15 @@ export default {
       } else {
         this.selectedItem = section;
       }
-    },
-    test() {
-      console.log("test");
+      VueScrollTo.scrollTo(`#${section}`, 500, {
+        container: ".menu",
+        easing: "ease-in",
+        offset: 0,
+        force: true,
+        cancelable: true,
+        x: false,
+        y: true
+      });
     }
   }
 };
@@ -105,17 +113,17 @@ export default {
 
 <style lang="scss" scoped>
 .menu {
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  height: 90vh;
   overflow: scroll;
+  flex-direction: column;
   background-color: $light;
   .menu-section {
-    display: block;
     height: 0;
     min-height: 0;
-    transition: all 250ms ease-in;
+    display: block;
     background-color: $light;
+    transition: all 250ms ease-in;
     background-image: url("../assets/brick-wall.png");
 
     &.selected {
@@ -123,26 +131,25 @@ export default {
     }
   }
   .section {
-    background-color: red;
-    display: flex;
-    flex: 1 1 0px;
-    transition: all 250ms ease-in;
-    height: 100%;
     background-image: $gradient, url("../assets/concrete-wall.png");
-    align-items: center;
+    transition: all 250ms ease-in;
     font-family: "Recoleta-Bold";
     justify-content: flex-start;
     background-size: contain;
+    background-color: red;
+    align-items: center;
+    display: flex;
+    flex: 1 1 0px;
+    height: 100%;
 
     .section-title {
       font-size: 2rem;
-      transition: all 250ms ease-in;
       padding-left: 2rem;
+      transition: all 250ms ease-in;
     }
 
     &.selected {
       box-shadow: inset 0 0 10px #000000;
-
       .section-title {
         text-decoration: underline;
         padding-left: 3rem;
@@ -152,7 +159,6 @@ export default {
     &:hover {
       box-shadow: inset 0 0 10px #000000;
     }
-
     &.appetizers {
       background-color: $yellow;
     }

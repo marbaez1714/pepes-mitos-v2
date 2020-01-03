@@ -5,6 +5,7 @@
         <!-- HOURS -->
         <div class="information yellow">
           <span class="title">Hours</span>
+          <span class="detail">Open 7 days a week!</span>
           <span class="detail"
             >Mon. & Tue. <span class="pipe">||</span> 11am - 3pm</span
           >
@@ -21,6 +22,8 @@
         <!-- ADDRESS -->
         <div class="information blue-light">
           <span class="title">Address</span>
+          <span class="detail">Located in the heard of Deep Ellum.</span>
+
           <span class="detail link">
             <a
               href="https://goo.gl/maps/pEJBpcGrtMF4rEic8"
@@ -43,8 +46,11 @@
           <span class="title">Social Media</span>
           <span class="detail link">
             <a href="https://www.facebook.com/pepesandmitos/"
-              ><FacebookIcon
-            /></a>
+              ><FacebookIcon />
+            </a>
+            <a href="https://www.instagram.com/pepeandmitosmexcafe/"
+              ><InstagramIcon />
+            </a>
           </span>
         </div>
       </div>
@@ -60,9 +66,11 @@
 
 <script>
 import FacebookIcon from "@/assets/FacebookIcon.vue";
+import InstagramIcon from "@/assets/InstagramIcon.vue";
 export default {
   components: {
-    FacebookIcon
+    FacebookIcon,
+    InstagramIcon
   },
   data() {
     return {
@@ -82,11 +90,11 @@ export default {
   height: 100%;
 }
 .section-content {
-  font-size: 2rem;
-  display: flex;
-  flex-direction: row;
   height: 100%;
+  display: flex;
+  font-size: 2rem;
   align-items: center;
+  flex-direction: row;
   background-color: $light;
   background-image: $gradient, url("../assets/brick-wall.png");
   a {
@@ -94,18 +102,18 @@ export default {
   }
 
   .sub-section {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
     width: 50%;
     height: 100%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
     justify-content: space-between;
     .information {
+      flex: 1 0 0;
+      padding: 1rem;
       display: flex;
       flex-direction: column;
-      flex: 1 0 0;
       justify-content: center;
-      padding: 1rem;
       background-image: $gradient, url("../assets/concrete-wall.png");
 
       &.yellow {
@@ -131,11 +139,10 @@ export default {
       padding-left: 2rem;
     }
     &.map {
-      background: $blue-dark;
+      padding: 1rem;
+      background: $red;
       height: calc(100% - 2rem);
       background-image: $gradient, url("../assets/concrete-wall.png");
-
-      padding: 1rem;
       .vue-google-map {
         height: 100%;
       }

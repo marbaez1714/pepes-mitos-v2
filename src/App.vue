@@ -4,13 +4,16 @@
     <div class="router-view">
       <router-view />
     </div>
+    <FooterBar/>
   </div>
 </template>
 <script>
 import NavBar from "@/components/NavBar.vue";
+import FooterBar from "@/components/FooterBar.vue";
 export default {
   components: {
-    NavBar
+    NavBar,
+    FooterBar
   }
 };
 </script>
@@ -41,7 +44,8 @@ body {
 }
 
 .router-view {
-  height: 90vh;
+  height: 82vh;
   overflow: scroll;
+
 }
 </style>

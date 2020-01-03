@@ -41,15 +41,7 @@ export default {
   methods: {
     scrollTo() {
       this.$emit("selectItem");
-      VueScrollTo.scrollTo(`#${this.target}`, 500, {
-        container: ".menu",
-        easing: "ease-in",
-        offset: 0,
-        force: true,
-        cancelable: true,
-        x: false,
-        y: true
-      });
+      
     }
   }
 };
@@ -62,29 +54,29 @@ export default {
 }
 
 .section {
-  background-color: red;
   display: flex;
-  transition: all 250ms ease-in;
-  background-image: $gradient, url("../assets/concrete-wall.png");
+  height: 12vh;
   align-items: center;
-  font-family: "Recoleta-Bold";
-  justify-content: flex-start;
+  background-color: red;
   background-size: contain;
-  height: 12.5vh;
+  justify-content: flex-start;
+  font-family: "Recoleta-Bold";
+  transition: all 150ms ease-in;
+  background-image: $gradient, url("../assets/concrete-wall.png");
 
   .section-title {
-    font-size: 2rem;
-    transition: all 250ms ease-in;
-    padding: 0 0 0 2rem;
     margin: 2rem 0;
+    font-size: 2rem;
+    padding: 0 0 0 2rem;
+    transition: all 250ms ease-in;
   }
 
   &.selected {
     box-shadow: inset 0 0 10px #000000;
 
     .section-title {
-      text-decoration: underline;
       padding-left: 3rem;
+      text-decoration: underline;
     }
   }
 
@@ -115,21 +107,21 @@ export default {
   }
 }
 .menu-section {
-  display: flex;
-  flex-direction: column;
-  max-height: 0;
-  transition: all 250ms ease-in;
-  background-color: $light;
-  background-image: url("../assets/brick-wall.png");
-  transform-origin: top center;
   opacity: 0;
-  overflow: scroll;
+  max-height: 0;
+  display: flex;
   padding: 0 1rem;
+  overflow: scroll;
+  flex-direction: column;
+  background-color: $light;
+  transform-origin: top center;
+  transition: all 150ms ease-in;
   box-shadow: inset 0 0 10px #000000;
+  background-image: url("../assets/brick-wall.png");
 
   &.open {
     opacity: 1;
-    max-height: 70vh;
+    max-height: 50vh;
     padding: 1rem 1rem 2rem;
   }
 }

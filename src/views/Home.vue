@@ -1,14 +1,14 @@
 <template>
   <div class="home">
-    <div class="section green">
+    <div class="section green" @click="$router.push('/tour')">
       <div class="overlay" />
       <h2 class="title">Tour</h2>
     </div>
     <div class="section white">
       <div class="overlay" />
-      <h2 class="title">About Us</h2>
+      <img class="logo" src="../assets/logo.png" />
     </div>
-    <div class="section red">
+    <div class="section red" @click="$router.push('/menu')">
       <div class="overlay" />
       <h2 class="title">Menu</h2>
     </div>
@@ -23,45 +23,47 @@ export default {
 
 <style lang="scss" scoped>
 .home {
+  height: 100%;
   display: flex;
   flex-direction: row;
-  height: 90vh;
   @media screen and (max-width: 850px) {
     flex-direction: column;
   }
 
   .section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex: 1 1 0px;
-    transition: all 250ms ease-in;
-    background-size: cover;
+    display: flex;
     position: relative;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    transition: all 250ms ease-in;
     .title {
       z-index: 3;
-      font-family: "Recoleta-Bold";
       font-size: 3rem;
+      font-family: "Recoleta-Bold";
     }
-
+    .logo{
+      z-index: 5;
+      padding: 2rem;
+      height: 40vh;
+    }
     .overlay {
-      display: flex;
-      height: 100%;
-      width: 100%;
-      opacity: 0.9;
-      position: absolute;
       z-index: 2;
-      box-shadow: none;
-      transition: all 250ms ease-in;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+      display: flex;
       cursor: pointer;
+      box-shadow: none;
+      position: absolute;
+      transition: all 250ms ease-in;
     }
-
     &.green {
       background-image: $gradient, url("../assets/background1-3.jpg");
-
       .overlay {
-        background-image: $gradient, url("../assets/arches.png");
         background-color: $green-light;
+        background-image: $gradient, url("../assets/arches.png");
       }
     }
     &.white {
@@ -69,16 +71,16 @@ export default {
 
       .overlay {
         opacity: 0.8;
-        background-image: $gradient, url("../assets/arches.png");
         background-color: white;
+        background-image: $gradient, url("../assets/arches.png");
       }
     }
     &.red {
       background-image: $gradient, url("../assets/background3-3.jpg");
 
       .overlay {
-        background-image: $gradient, url("../assets/arches.png");
         background-color: $red;
+        background-image: $gradient, url("../assets/arches.png");
       }
     }
     &:hover {

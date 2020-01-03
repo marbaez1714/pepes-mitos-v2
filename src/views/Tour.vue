@@ -10,16 +10,16 @@
 </template>
 <style lang="scss" scoped>
 .tour {
-  display: flex;
-  flex-direction: row;
   width: 100%;
+  display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
 
   .section {
-    height: 45vh;
-    padding: 2.5vh 2.5vh;
     flex: 1 0 0;
+    height: 30vh;
+    padding: 2.5vh 2.5vh;
     transition: all 250ms ease-in;
     background-image: $gradient, url("../assets/concrete-wall.png");
     img {
@@ -48,13 +48,8 @@
     }
   }
   @media screen and (max-width: 800px) {
-    flex-direction: column;
     .section {
-      width: calc(100% - 5vh);
-      img {
-        width: 100%;
-        height: unset;
-      }
+      height: 50vh;
     }
   }
 }
