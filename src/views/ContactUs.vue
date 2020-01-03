@@ -5,7 +5,6 @@
         <!-- HOURS -->
         <div class="information yellow">
           <span class="title">Hours</span>
-          <span class="detail">Open 7 days a week!</span>
           <span class="detail"
             >Mon. & Tue. <span class="pipe">||</span> 11am - 3pm</span
           >
@@ -22,7 +21,6 @@
         <!-- ADDRESS -->
         <div class="information blue-light">
           <span class="title">Address</span>
-          <span class="detail">Located in the heard of Deep Ellum.</span>
 
           <span class="detail link">
             <a
@@ -114,6 +112,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      background-size: contain;
       background-image: $gradient, url("../assets/concrete-wall.png");
 
       &.yellow {

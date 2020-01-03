@@ -4,7 +4,7 @@
     <div class="router-view">
       <router-view />
     </div>
-    <FooterBar/>
+    <FooterBar />
   </div>
 </template>
 <script>
@@ -44,8 +44,8 @@ body {
 }
 
 .router-view {
+  margin-top: 10vh;
   height: 82vh;
   overflow: scroll;
-
 }
 </style>

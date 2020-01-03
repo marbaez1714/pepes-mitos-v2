@@ -67,6 +67,7 @@ export default {
       }
     }
     &.white {
+      cursor: default;
       background-image: $gradient, url("../assets/background2-3.jpg");
 
       .overlay {

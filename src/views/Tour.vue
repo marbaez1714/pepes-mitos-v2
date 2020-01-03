@@ -15,10 +15,10 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-
+  height: 100%;
   .section {
     flex: 1 0 0;
-    height: 30vh;
+    height: 40vh;
     padding: 2.5vh 2.5vh;
     transition: all 250ms ease-in;
     background-image: $gradient, url("../assets/concrete-wall.png");
@@ -49,7 +49,7 @@
   }
   @media screen and (max-width: 800px) {
     .section {
-      height: 50vh;
+      height: 30vh;
     }
   }
 }

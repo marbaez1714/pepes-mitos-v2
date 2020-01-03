@@ -41,14 +41,16 @@ export default {
 
 <style lang="scss" scoped>
 .footer-bar {
-  height: 8vh;
   background-color: #2c3e50;
   background-image: url("../assets/lined-paper-2.png");
   display: flex;
   align-items: center;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
   .footer-section {
     color: white;
-    padding: 1rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -64,8 +66,8 @@ export default {
     }
   }
   .logo-wrapper {
-    height: calc(100% - 2rem);
-    padding: 1rem 2rem;
+    height: calc(100% - 1rem);
+    padding: 0.5rem 2rem;
     justify-self: flex-end;
     margin-left: auto;
     img {
@@ -77,6 +79,7 @@ export default {
   .footer-bar {
     height: unset;
     flex-direction: column;
+    bottom: 0;
     .footer-section {
       align-items: center;
       padding: 0.5rem;

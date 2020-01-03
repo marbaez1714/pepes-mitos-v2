@@ -54,7 +54,11 @@ export default {
   justify-content: space-between;
   background-image: url("../assets/lined-paper-2.png");
   box-shadow: 0 0 10px #000000;
-
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: $blue-dark;
   .title {
     display: flex;
     cursor: pointer;
