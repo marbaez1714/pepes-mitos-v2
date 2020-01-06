@@ -95,6 +95,7 @@ export default {
 
   @media screen and (max-width: 800px) {
     justify-content: space-between;
+    height: 70px;
     .title {
       .main {
         font-size: 1.25rem;
