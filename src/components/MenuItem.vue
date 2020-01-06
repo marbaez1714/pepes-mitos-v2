@@ -41,7 +41,6 @@ export default {
   methods: {
     scrollTo() {
       this.$emit("selectItem");
-      
     }
   }
 };
@@ -121,7 +120,7 @@ export default {
 
   &.open {
     opacity: 1;
-    max-height: 50vh;
+    max-height: max-content;
     padding: 1rem 1rem 2rem;
   }
 }
