@@ -50,7 +50,7 @@ body {
 }
 @media screen and (max-width: 850px) {
   .router-view {
-    height: unset;
+    height: 650px;
   }
 }
 </style>
