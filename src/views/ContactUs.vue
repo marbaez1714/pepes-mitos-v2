@@ -149,38 +149,36 @@ export default {
       font-size: 20px;
       .information {
         flex: unset;
-
+        padding: 10px;
         .detail {
           padding-left: 0;
         }
         &.hours {
-          height: 250px;
+          height: 230px;
         }
         &.address {
-          height: 100px;
+          height: 80px;
         }
         &.phone {
-          height: 100px;
+          height: 80px;
         }
         &.social {
-          height: 150px;
+          height: 130px;
         }
       }
       &.map {
         padding: 10px;
         height: 420px;
+        width: calc(100% - 20px);
+        .vue-google-map {
+          height: 400px;
+        }
       }
     }
     span {
       padding: 10px 0 0;
       &.title {
         padding: 0;
-      }
-    }
-    .map {
-      width: calc(100% - 20px);
-      .vue-google-map {
-        height: 400px;
       }
     }
   }
