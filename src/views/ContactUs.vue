@@ -144,8 +144,6 @@ export default {
 
   @media screen and (max-width: 850px) {
     flex-direction: column;
-    font-size: 1.5rem;
-    height: auto;
     .sub-section {
       text-align: center;
       width: 100%;
@@ -168,7 +166,8 @@ export default {
         }
       }
       &.map {
-        height: calc(90vh - 4rem);
+        padding: 10px;
+        height: 420px;
       }
     }
     span {
@@ -177,11 +176,8 @@ export default {
         padding: 0;
       }
     }
-    .pipe {
-      display: none;
-    }
     .map {
-      width: calc(100% - 2rem);
+      width: calc(100% - 20px);
       .vue-google-map {
         height: 400px;
       }
