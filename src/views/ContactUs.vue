@@ -140,7 +140,7 @@ export default {
   }
 
   @media screen and (max-width: 850px) {
-    height: 650px;
+    height: fit-content;
 
     flex-direction: column;
     .sub-section {
@@ -149,6 +149,7 @@ export default {
       font-size: 20px;
       .information {
         flex: unset;
+        height: fit-content;
         padding: 10px;
         .detail {
           padding-left: 0;
