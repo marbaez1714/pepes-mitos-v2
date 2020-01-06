@@ -1,63 +1,59 @@
 <template>
   <div class="contact">
-    <div class="section-content location">
-      <div class="sub-section">
-        <!-- HOURS -->
-        <div class="information hours">
-          <span class="title">Hours</span>
-          <span class="detail"
-            >Mon. & Tue. <span class="pipe">||</span> 11am - 3pm</span
-          >
-          <span class="detail"
-            >Wed. & Thu. <span class="pipe">||</span> 11am - 10pm</span
-          >
-          <span class="detail"
-            >Fri. & Sat. <span class="pipe">||</span> 11am - 11pm</span
-          >
-          <span class="detail"
-            >Sun. <span class="pipe">||</span> 11am - 5pm</span
-          >
-        </div>
-        <!-- ADDRESS -->
-        <div class="information address">
-          <span class="title">Address</span>
+    <div class="sub-section">
+      <!-- HOURS -->
+      <div class="information hours">
+        <span class="title">Hours</span>
+        <span class="detail"
+          >Mon. & Tue. <span class="pipe">||</span> 11am - 3pm</span
+        >
+        <span class="detail"
+          >Wed. & Thu. <span class="pipe">||</span> 11am - 10pm</span
+        >
+        <span class="detail"
+          >Fri. & Sat. <span class="pipe">||</span> 11am - 11pm</span
+        >
+        <span class="detail">Sun. <span class="pipe">||</span> 11am - 5pm</span>
+      </div>
+      <!-- ADDRESS -->
+      <div class="information address">
+        <span class="title">Address</span>
 
-          <span class="detail link">
-            <a
-              href="https://goo.gl/maps/pEJBpcGrtMF4rEic8"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              2911 Elm Street, Dallas, Texas
-            </a>
-          </span>
-        </div>
-        <!-- PHONE NUMBER -->
-        <div class="information phone">
-          <span class="title">Phone Number</span>
-          <span class="detail link">
-            <a href="tel:214-741-1901">214-741-1901</a>
-          </span>
-        </div>
-        <!-- SOCIAL MEDIA -->
-        <div class="information social">
-          <span class="title">Social Media</span>
-          <span class="detail link">
-            <a href="https://www.facebook.com/pepesandmitos/"
-              ><FacebookIcon />
-            </a>
-            <a href="https://www.instagram.com/pepeandmitosmexcafe/"
-              ><InstagramIcon />
-            </a>
-          </span>
-        </div>
+        <span class="detail link">
+          <a
+            href="https://goo.gl/maps/pEJBpcGrtMF4rEic8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2911 Elm Street, Dallas, Texas
+          </a>
+        </span>
       </div>
-      <!-- MAP -->
-      <div class="sub-section map">
-        <googlemaps-map :center="center" :zoom="zoom">
-          <googlemaps-marker :position="center" />
-        </googlemaps-map>
+      <!-- PHONE NUMBER -->
+      <div class="information phone">
+        <span class="title">Phone Number</span>
+        <span class="detail link">
+          <a href="tel:214-741-1901">214-741-1901</a>
+        </span>
       </div>
+      <!-- SOCIAL MEDIA -->
+      <div class="information social">
+        <span class="title">Social Media</span>
+        <span class="detail link">
+          <a href="https://www.facebook.com/pepesandmitos/"
+            ><FacebookIcon />
+          </a>
+          <a href="https://www.instagram.com/pepeandmitosmexcafe/"
+            ><InstagramIcon />
+          </a>
+        </span>
+      </div>
+    </div>
+    <!-- MAP -->
+    <div class="sub-section map">
+      <googlemaps-map :center="center" :zoom="zoom">
+        <googlemaps-marker :position="center" />
+      </googlemaps-map>
     </div>
   </div>
 </template>
@@ -86,15 +82,13 @@ export default {
 <style lang="scss" scoped>
 .contact {
   height: 100%;
-}
-.section-content {
-  height: 100%;
   display: flex;
   font-size: 2rem;
   align-items: center;
   flex-direction: row;
   background-color: $light;
   background-image: $gradient, url("../assets/brick-wall.png");
+
   a {
     margin-left: 0.5rem;
   }
