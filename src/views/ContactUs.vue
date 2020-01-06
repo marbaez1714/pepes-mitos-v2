@@ -153,18 +153,6 @@ export default {
         .detail {
           padding-left: 0;
         }
-        &.hours {
-          height: 230px;
-        }
-        &.address {
-          height: 80px;
-        }
-        &.phone {
-          height: 80px;
-        }
-        &.social {
-          height: 130px;
-        }
       }
       &.map {
         padding: 10px;
