@@ -61,6 +61,7 @@
       width: calc(100% - 4rem);
       iframe {
         width: 100%;
+        height: 200px;
       }
     }
   }

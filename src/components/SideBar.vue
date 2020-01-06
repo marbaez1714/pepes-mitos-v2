@@ -39,7 +39,7 @@ export default {
   z-index: 5;
   opacity: 0;
   width: 60vw;
-  height: 100vh;
+  height: 70vh;
   display: none;
   overflow: hidden;
   position: absolute;
@@ -48,6 +48,7 @@ export default {
   font-family: "Recoleta-Bold";
   background-color: $blue-light;
   justify-content: space-between;
+  box-shadow: 0 0 10px #000000;
   background-image: $gradient, url("../assets/arches.png");
   transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   .link {
