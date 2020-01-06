@@ -40,6 +40,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: max-content;
     padding: 2rem;
     width: calc(100% - 4rem);
     .title {
