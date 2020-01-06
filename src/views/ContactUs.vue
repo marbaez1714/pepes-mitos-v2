@@ -154,9 +154,8 @@ export default {
     height: auto;
     .sub-section {
       text-align: center;
-
       width: 100%;
-      font-size: 1.25rem;
+      font-size: 20px;
       .detail {
         padding-left: 0;
       }
@@ -165,7 +164,7 @@ export default {
       }
     }
     span {
-      padding: 0.5rem 0 0;
+      padding: 10px 0 0;
     }
     .pipe {
       display: none;
@@ -173,7 +172,7 @@ export default {
     .map {
       width: calc(100% - 2rem);
       .vue-google-map {
-        height: 60vh;
+        height: 400px;
       }
     }
   }
