@@ -2,7 +2,7 @@
   <div class="about">
     <div class="about-section">
       <span class="title">About Us</span>
-      <span
+      <span class="content"
         >Located in the heart of Deep Ellum, the Rojas Family has been serving
         Mex-Tex dishes to the Dallas area since 1994. Starting with recipes that
         date back generations, Chef Pedro Rojas has added his unique style to
@@ -48,7 +48,7 @@
       font-family: "Recoleta-Bold";
       margin-bottom: 0.5rem;
     }
-    span {
+    .content {
       font-family: "Recoleta";
       max-width: 30rem;
       font-size: 1.25rem;
@@ -58,7 +58,14 @@
   @media screen and (max-width: 850px) {
     flex-direction: column;
     .about-section {
+      flex: unset;
       height: fit-content;
+      .title {
+        font-size: 32px;
+      }
+      .content {
+        font-size: 20px;
+      }
     }
     .video-wrapper {
       width: calc(100% - 4rem);
