@@ -94,6 +94,7 @@ export default {
   .sub-section {
     width: 50%;
     display: flex;
+    height: inherit;
     text-align: left;
     flex-direction: column;
     justify-content: space-between;
