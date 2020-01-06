@@ -57,7 +57,9 @@
   }
   @media screen and (max-width: 850px) {
     flex-direction: column;
-
+    .about-section {
+      height: fit-content;
+    }
     .video-wrapper {
       width: calc(100% - 4rem);
       iframe {
