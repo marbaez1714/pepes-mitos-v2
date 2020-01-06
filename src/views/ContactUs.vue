@@ -3,7 +3,7 @@
     <div class="section-content location">
       <div class="sub-section">
         <!-- HOURS -->
-        <div class="information yellow">
+        <div class="information hours">
           <span class="title">Hours</span>
           <span class="detail"
             >Mon. & Tue. <span class="pipe">||</span> 11am - 3pm</span
@@ -19,7 +19,7 @@
           >
         </div>
         <!-- ADDRESS -->
-        <div class="information blue-light">
+        <div class="information address">
           <span class="title">Address</span>
 
           <span class="detail link">
@@ -33,14 +33,14 @@
           </span>
         </div>
         <!-- PHONE NUMBER -->
-        <div class="information orange">
+        <div class="information phone">
           <span class="title">Phone Number</span>
           <span class="detail link">
             <a href="tel:214-741-1901">214-741-1901</a>
           </span>
         </div>
         <!-- SOCIAL MEDIA -->
-        <div class="information green">
+        <div class="information social">
           <span class="title">Social Media</span>
           <span class="detail link">
             <a href="https://www.facebook.com/pepesandmitos/"
@@ -115,16 +115,16 @@ export default {
       background-size: contain;
       background-image: $gradient, url("../assets/concrete-wall.png");
 
-      &.yellow {
+      &.hours {
         background-color: $yellow;
       }
-      &.blue-light {
+      &.address {
         background-color: $blue-light;
       }
-      &.orange {
+      &.phone {
         background-color: $orange;
       }
-      &.green {
+      &.social {
         background-color: $green;
       }
     }
@@ -159,12 +159,29 @@ export default {
       .detail {
         padding-left: 0;
       }
+      .information {
+        &.hours {
+          height: 207px;
+        }
+        &.address {
+          height: 96px;
+        }
+        &.phone {
+          height: 96px;
+        }
+        &.social {
+          height: 116px;
+        }
+      }
       &.map {
         height: calc(90vh - 4rem);
       }
     }
     span {
       padding: 10px 0 0;
+      &.title {
+        padding: 0;
+      }
     }
     .pipe {
       display: none;
