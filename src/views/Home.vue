@@ -27,6 +27,7 @@ export default {
   display: flex;
   flex-direction: row;
   @media screen and (max-width: 850px) {
+    height: 650px;
     flex-direction: column;
   }
 
@@ -43,7 +44,7 @@ export default {
       font-size: 3rem;
       font-family: "Recoleta-Bold";
     }
-    .logo{
+    .logo {
       z-index: 5;
       padding: 2rem;
       height: 40vh;
