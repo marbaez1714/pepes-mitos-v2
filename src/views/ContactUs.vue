@@ -88,14 +88,11 @@ export default {
   flex-direction: row;
   background-color: $light;
   background-image: $gradient, url("../assets/brick-wall.png");
-
   a {
     margin-left: 0.5rem;
   }
-
   .sub-section {
     width: 50%;
-    height: 100%;
     display: flex;
     text-align: left;
     flex-direction: column;
@@ -143,26 +140,30 @@ export default {
   }
 
   @media screen and (max-width: 850px) {
+    height: 650px;
+
     flex-direction: column;
     .sub-section {
       text-align: center;
       width: 100%;
       font-size: 20px;
-      .detail {
-        padding-left: 0;
-      }
       .information {
+        flex: unset;
+
+        .detail {
+          padding-left: 0;
+        }
         &.hours {
-          height: 207px;
+          height: 250px;
         }
         &.address {
-          height: 96px;
+          height: 100px;
         }
         &.phone {
-          height: 96px;
+          height: 100px;
         }
         &.social {
-          height: 116px;
+          height: 150px;
         }
       }
       &.map {
