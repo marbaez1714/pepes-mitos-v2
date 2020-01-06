@@ -48,4 +48,9 @@ body {
   height: 82vh;
   overflow: scroll;
 }
+@media screen and (max-width: 850px) {
+  .router-view {
+    height: unset;
+  }
+}
 </style>
