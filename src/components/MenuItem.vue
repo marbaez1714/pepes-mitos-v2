@@ -64,7 +64,6 @@ export default {
   background-image: $gradient, url("../assets/concrete-wall.png");
 
   .section-title {
-    margin: 2rem 0;
     font-size: 2rem;
     padding: 0 0 0 2rem;
     transition: all 250ms ease-in;
