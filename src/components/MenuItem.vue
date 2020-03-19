@@ -1,10 +1,6 @@
 <template>
   <div class="section-wrapper" :id="target">
-    <div
-      class="section"
-      :class="[{ selected: selected }, color]"
-      @click="scrollTo()"
-    >
+    <div class="section" :class="[{ selected: selected }, color]" @click="scrollTo()">
       <p class="section-title">{{ title }}</p>
     </div>
     <div class="menu-section" :class="{ open: selected }">

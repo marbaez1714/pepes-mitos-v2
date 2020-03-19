@@ -12,11 +12,8 @@ import VueAnalytics from "vue-analytics";
 Vue.use(VueYouTubeEmbed);
 Vue.use(VueGoogleMaps, {
   load: {
-    // Google API key
-    apiKey: "AIzaSyA8bBGIaExp9QIJKSBA-hddWgnR2QTlvOQ",
-    // Enable more Google Maps libraries here
+    apiKey: process.env.VUE_APP_GOOGLE_API,
     libraries: ["places"],
-    // Use new renderer
     useBetaRenderer: false
   }
 });

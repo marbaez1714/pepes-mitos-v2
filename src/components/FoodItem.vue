@@ -3,12 +3,13 @@
     <div class="guy-approved" v-if="item.ddd">
       <img src="../assets/guyhead.png" />
     </div>
-    <div>
+    <div class="food-container">
       <div class="food-name">
-        {{ item.name }}
-        <span class="featured" v-if="item.ddd">
-          - featured on Diners, Drive-Ins and Dives !</span
-        >
+        <span>
+          <span>{{ item.name }} </span>
+          <span class="price">{{ item.price ? `- $${item.price}` : null }}</span>
+        </span>
+        <span class="featured" v-if="item.ddd"> Featured on Diners, Drive-Ins and Dives !</span>
       </div>
       <div class="food-desc" v-if="item.desc">{{ item.desc }}</div>
       <div class="food-options" v-if="item.options">
@@ -40,6 +41,9 @@ export default {
       margin: 0 1rem;
     }
   }
+  .food-container {
+    width: 100%;
+  }
 
   .food-name {
     display: flex;
@@ -50,6 +54,11 @@ export default {
     .featured {
       color: $orange;
       text-decoration: underline;
+    }
+    .price {
+      font-size: 0.75rem;
+      opacity: 0.8;
+      font-family: "Recoleta";
     }
   }
   .food-desc {
