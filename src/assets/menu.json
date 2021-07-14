@@ -13,24 +13,12 @@
     {
       "name": "Quesadillas",
       "desc": "Three flour tortillas loaded with Monterey Jack cheese, onions, tomatoes, poblano peppers & choice of our delicious fillings. Lightly grilled & served with guacamole, sour cream & pico de gallo.",
-      "options": [
-        "VEGGIE - $9.75",
-        "AVACODO - $10.75",
-        "SPINACH & MUSHROOM - $10.75",
-        "SPICY SHRIMP - $14.75",
-        "FAJITA - $12.45 (Beef, Chicken, or Both)"
-      ]
+      "options": ["VEGGIE", "AVACODO", "SPINACH & MUSHROOM", "SPICY SHRIMP", "FAJITA (Beef, Chicken, or Both)"]
     },
     {
       "name": "Nachos",
       "desc": "Tortilla chips topped with mixed cheeses, jalapeño peppers & your choice of toppings. Served with guacamole & sour cream.",
-      "options": [
-        "CHEESE - $8.75",
-        "BEAN - $8.95",
-        "TACO - $11.45",
-        "BEAN & CHORIZO - $12.45",
-        "FAJITA & BEAN - $12.45"
-      ]
+      "options": ["CHEESE", "BEAN", "TACO", "BEAN & CHORIZO", "FAJITA & BEAN"]
     },
     {
       "name": "Fried Taquitos",
@@ -41,12 +29,12 @@
     {
       "name": "Guacamole",
       "desc": "Served over shredded lettuce & topped with diced tomatoes.",
-      "options": ["SMALL - $5.45", "LARGE - $8.45"]
+      "options": ["SMALL", "LARGE"]
     },
     {
       "name": "Chile Con Queso",
       "desc": "Option to add Spinach or Beef Taco Mix.",
-      "options": ["CUP - $5.45", "BOWL - $7.45"]
+      "options": ["CUP", "BOWL"]
     }
   ],
   "soups": [
@@ -67,8 +55,8 @@
     },
     {
       "name": "Tortilla Soup",
-      "desc": "Fresh vegetables in a delicious broth with Mexican rice, seasoned chicken, tortilla strips & Monterey Jack cheese. Add Avocado for $0.75.",
-      "options": ["CUP - $4.45", "BOWL - $5.45"]
+      "desc": "Fresh vegetables in a delicious broth with Mexican rice, seasoned chicken, tortilla strips & Monterey Jack cheese. Add Avocado.",
+      "options": ["CUP", "BOWL"]
     },
     {
       "name": "Albondiga Soup",
@@ -82,7 +70,7 @@
       "name": "Sizzling Fajitas",
       "price": "15.95",
       "desc": "Tender beef sirloin or chicken breast, charbroiled & served on a hot skillet over delicious grilled onions. Served with rice, beans, guacamole, sour cream, pico de gallo & flour tortillas.",
-      "options": ["Add sautéed mushrooms, jack cheese & green bell peppers. - $2.95"]
+      "options": ["Add sautéed mushrooms, jack cheese & green bell peppers."]
     },
     {
       "name": "Chipotle Shrimp",
@@ -242,7 +230,7 @@
       "name": "Brunch Quesadillas",
       "price": "11.50",
       "desc": "Three flour tortillas filled with mixed cheese, onions, tomatoes & scrambled eggs. Served with sour cream & pico de gallo.",
-      "options": ["Add fajita (Beef, Chicken, or Both). - $1.50"]
+      "options": ["Add fajita (Beef, Chicken, or Both)."]
     },
     {
       "name": "Huevos Rancheros",
@@ -343,7 +331,7 @@
       "name": "#13 Sizzling Fajitas",
       "price": "12.95",
       "desc": "Beef, chicken or both. Served with flour tortillas, pico de gallo, guacamole & sour cream.",
-      "options": ["Make it top shelf - Add mushrooms, jack cheese & green bell peppers. - $1.95"]
+      "options": ["Make it top shelf - Add mushrooms, jack cheese & green bell peppers."]
     },
     {
       "name": "#14 Carne Al Chipotle",
@@ -405,7 +393,7 @@
     {
       "name": "Mexican Bread Pudding",
       "price": "7.95",
-      "options": ["Add ice cream! - $1.00"]
+      "options": ["Add ice cream!"]
     },
     {
       "name": "Ice Tea & Coffee",

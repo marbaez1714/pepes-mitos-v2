@@ -7,7 +7,7 @@
       <div class="food-name">
         <span>
           <span>{{ item.name }} </span>
-          <span class="price">{{ item.price ? `- $${item.price}` : null }}</span>
+          <!-- <span class="price">{{ item.price ? `- $${item.price}` : null }}</span> -->
         </span>
         <span class="featured" v-if="item.ddd"> Featured on Diners, Drive-Ins and Dives !</span>
       </div>
